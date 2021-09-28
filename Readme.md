@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Далия Каиткулова](https://up.htmlacademy.ru/javascript/24/user/1691051).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 
