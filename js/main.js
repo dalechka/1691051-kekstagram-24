@@ -4,7 +4,7 @@ function getRandomIntInclusive(min, max) {
     return 'Error!';
   };
 
-  if(min > -1 && max > -1) {
+  if(min >= 0 && max >= 0) {
     min = Math.ceil(min);
     max = Math.round(max);
     return Math.round(Math.random() * (max - min)) + min; //Максимум и минимум включаются
