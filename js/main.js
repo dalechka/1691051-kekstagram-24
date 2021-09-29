@@ -1,20 +1,29 @@
 function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min; //Максимум и минимум включаются
+
+  if (min > max) {
+    return 'Error!';
+  };
+
+  if(min > -1 && max > -1) {
+    min = Math.ceil(min);
+    max = Math.round(max);
+    return Math.round(Math.random() * (max - min)) + min; //Максимум и минимум включаются
+  }
+
+  return 'Error!';
 }
 
+getRandomIntInclusive(10, 85);
+
 // код нашла здесь: https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+// но, кажется, от него уже мало что осталось изначального))
 
-getRandomIntInclusive();
-
-
-function lineLenght(checkedLine, maxLenght) {
-  if(checkedLine <= maxLenght) {
+function lineLength(checkedLine, maxLength) {
+  if(checkedLine.length <= maxLength) {
     return true;
   }
 
   return false;
 }
 
-lineLenght();
+lineLength('someone', 15);
